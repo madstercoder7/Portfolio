@@ -103,6 +103,7 @@ main {
 .project-description {
     font-size: 16px;
     color: white;
+    font-family: "SF Pro Text Semibold", "SF Pro Text Semibold Placeholder", "-apple-system", "BlinkMacSystemFont", sans-serif;
 }
 
 /* Footer */
