@@ -19,12 +19,24 @@ a {
     left: 0;
     z-index: 9999; /* Ensure it covers everything */
     transition: opacity 0.5s ease-out;
+    align-items: center;
 }
 
 .fade-in {
     opacity: 0;
     font-size: 2.5rem;
     color: white;
+    animation: fadeIn 2s ease-in-out forwards;
+    margin-bottom: 20px;
+}
+
+.logo-ls {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
     animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -35,7 +47,9 @@ a {
 }
 
 .main-content {
-    display: none; /* Hide main content initially */
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
 }
 
 html, body {
@@ -44,6 +58,13 @@ html, body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(106, 120, 129);
+    overflow: hidden;
+    height: 100vh;
 }
 
 /* Navbar */
@@ -168,7 +189,7 @@ main {
 
 /* Footer */
 footer {
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(42, 52, 57);
     color: white;
     padding: 10px 20px;
     text-align: center;
