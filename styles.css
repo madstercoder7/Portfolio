@@ -7,47 +7,7 @@ a {
     text-decoration: none;
 }
 
-.loading-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(106, 120, 129); /* Background color */
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999; /* Ensure it covers everything */
-    transition: opacity 0.5s ease-out;
-    align-items: center;
-}
-
-.fade-in {
-    opacity: 0;
-    font-size: 2.5rem;
-    color: white;
-    animation: fadeIn 2s ease-in-out forwards;
-    margin-bottom: 20px;
-}
-
-.logo-ls {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 25px;
-    opacity: 0;
-    transition: opacity 0.5s ease-out;
-    animation: fadeIn 2s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 .main-content {
-    opacity: 0;
     transition: opacity 0.5s ease-in;
     flex: 1;
     display: flex;
@@ -61,13 +21,19 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-image: url("images/Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 body {
-    background-color: rgb(106, 120, 129);
-    height: 100vh;
-    min-height: 100vh;
     margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Navbar */
@@ -82,24 +48,12 @@ body {
     margin: 0;
 }
 
-.navbar.initial-transition {
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.navbar.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .logo {
     height: 40px;
     width: 40px;
     border-radius: 50%;
 }
 
-/* Navbar Links */
 .nav-bar-alinks ul {
     display: flex;
     margin: 0;
@@ -124,11 +78,14 @@ body {
     background-color: rgb(28, 36, 39);
 }
 
-/*Body*/
-main {
-    background-color: rgb(106, 120, 129);
-    padding: 20px;
+/* Main Highlight */
+.main-highlight {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px 20px;
 }
+
+/* Empty Section */
 
 /* Projects Container */
 .projects-container {
@@ -219,7 +176,7 @@ footer {
     background-color: rgb(0, 29, 52);
 }
 
-
+/* Background Content */
 .background-content {
     display: flex;
     flex-direction: column;
