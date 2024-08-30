@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
         setTimeout(() => {
             loadingScreen.style.display = 'none';
             document.body.style.overflow = 'auto';
+            mainContent.style.opacity = '1';
         }, 500);
     }, 2000);
 });
