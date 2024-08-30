@@ -81,13 +81,24 @@ body {
 
 /* Main Highlight */
 .main-highlight {
-    background-color: rgb(0,0,0,0.5);
+    background-color: rgb(0,0,0,0.1);
     text-align: center;
-    padding: 60px 20px;
+    padding: 338px 50px;
     color: white;
+    margin: 40px 40px 40px 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.main-highlight-name {
+    font-size: 100px;
 }
 
 /* Empty Section */
+.precap {
+    background-color: white;
+    height: 400px;
+}
 
 /* Projects Container */
 .projects-container {
@@ -96,7 +107,7 @@ body {
 }
 
 .projects-title {
-    color: rgb(40, 50, 56);
+    color: white;
     font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
@@ -191,7 +202,7 @@ footer {
 }
 
 .background-head {
-    color: rgb(40, 50, 56);
+    color: white;
     text-align: center;
     margin-bottom: 20px;
 }
