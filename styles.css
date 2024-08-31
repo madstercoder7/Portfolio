@@ -81,17 +81,29 @@ body {
 
 /* Main Highlight */
 .main-highlight {
-    background-color: rgb(0,0,0,0.1);
+    background-color: rgb(0,0,0,0.2);
     text-align: center;
-    padding: 338px 50px;
-    color: white;
+    padding: 397px 50px;
     margin: 40px 40px 40px 40px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
 }
 
+.main-highlight-content {
+    position: fixed;
+    bottom: 250;
+    left: 50;
+}
+
 .main-highlight-name {
     font-size: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: white;
+}
+
+.main-highlight-description {
+    color: rgb(255, 255, 255,0.6);
 }
 
 /* Empty Section */
